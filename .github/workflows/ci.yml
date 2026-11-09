@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: recuperer code
+        uses: actions/checkout@v7
+
       - name: Configurer Python
         uses: actions/setup-python@v7
         with:

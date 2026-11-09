@@ -21,6 +21,7 @@ jobs:
 
       - name: "simuler erreur"
         run: exit 1
+
       - name: "affichage du repertoire courant"
         run: pwd
 

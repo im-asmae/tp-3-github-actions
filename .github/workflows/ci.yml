@@ -23,4 +23,4 @@ jobs:
       - name: run des tests
         run: |
           pytest
-          python -m pytest -v --cov=app --cov-report=term-missing
+          python -m pytest -v --cov=app --cov-report=term-missing --cov-fail-under=100

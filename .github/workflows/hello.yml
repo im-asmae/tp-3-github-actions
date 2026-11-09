@@ -1,0 +1,26 @@
+name: Premier workflow CI
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Afficher un message
+        run: echo "Hello from GitHub Actions"
+
+  second-step:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "affichage de la derniere version de python"
+        run: python --version
+
+      - name: "affichage du repertoire courant"
+        run: pwd
+
+      - name: "affichage des fichiers présents dans ce repertoire"
+        run: ls

@@ -24,3 +24,9 @@ jobs:
 
       - name: "affichage des fichiers présents dans ce repertoire"
         run: ls
+
+      - name: "informations git"
+        run: |
+          echo "Branche : $GITHUB_REF_NAME"
+          echo "Commit : $GITHUB_SHA"
+          echo "Événement : $GITHUB_EVENT_NAME"

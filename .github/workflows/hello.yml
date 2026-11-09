@@ -19,6 +19,8 @@ jobs:
       - name: "affichage de la derniere version de python"
         run: python --version
 
+      - name: "simuler erreur"
+        run: exit 1
       - name: "affichage du repertoire courant"
         run: pwd
 
@@ -30,6 +32,3 @@ jobs:
           echo "Branche : $GITHUB_REF_NAME"
           echo "Commit : $GITHUB_SHA"
           echo "Événement : $GITHUB_EVENT_NAME"
-
-      - name: "simuler erreur"
-        run: exit 1

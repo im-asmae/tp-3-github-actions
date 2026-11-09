@@ -19,9 +19,6 @@ jobs:
       - name: "affichage de la derniere version de python"
         run: python --version
 
-      - name: "simuler erreur"
-        run: exit 1
-
       - name: "affichage du repertoire courant"
         run: pwd
 

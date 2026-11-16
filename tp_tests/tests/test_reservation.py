@@ -25,6 +25,15 @@ def test_reservation_10_unite(objet_stock):
     assert res == "refusee"
     assert objet_stock.quantite==5
 
+def test_reservation_4_unite(objet_stock):
+
+    reservation = Reservation(objet_stock)
+
+    res=reservation.reserver(4)
+
+    assert res == "confirme"
+    assert objet_stock.quantite==1
+
 def test_reservation_2_unite(objet_stock):
     #arrange
     reservation = Reservation(objet_stock)
